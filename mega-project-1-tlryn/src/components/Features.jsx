@@ -1,4 +1,4 @@
-import FeatureCard from "./FeatureCard"
+import FeatureCard from "./Feature"
 
 const Features = () => {
     return (

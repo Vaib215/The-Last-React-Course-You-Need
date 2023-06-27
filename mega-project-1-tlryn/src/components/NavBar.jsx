@@ -2,7 +2,7 @@ const MenuItems = () => {
     return (
         <>
             <li><a>Home</a></li>
-            <li><a>Video</a></li>
+            <li><a>Videos</a></li>
             <li><a>Projects</a></li>
             <li><a>About</a></li>
         </>
