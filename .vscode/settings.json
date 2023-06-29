@@ -1,8 +1,9 @@
 {
-  "workbench.colorTheme": "Default Dark+",
-  "workbench.preferredDarkColorTheme": "Default Dark+",
   "task.allowAutomaticTasks": "on",
-  "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
-  }
+  "workbench.colorTheme": "AMOLED",
+  "editor.mouseWheelZoom": true,
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.fontWeight": 300
 }
