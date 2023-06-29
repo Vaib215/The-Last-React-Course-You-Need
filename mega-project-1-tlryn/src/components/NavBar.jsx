@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom"
+
 const MenuItems = () => {
     return (
         <>
-            <li><a>Home</a></li>
-            <li><a>Videos</a></li>
-            <li><a>Projects</a></li>
-            <li><a>About</a></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to="/videos">Videos</Link></li>
+            <li><Link to='/projects'>Projects</Link></li>
+            <li><Link to='/about'>About</Link></li>
         </>
     )
 }
@@ -13,7 +15,7 @@ const NavBar = () => {
     return (
         <nav className="navbar bg-base-100 shadow-2xl z-50 fixed top-0 w-screen">
             <div className="navbar-start">
-                <a className="btn btn-ghost text-xl font-mono rounded-full lowercase">TLRYN</a>
+                <Link to='/' className="btn btn-ghost text-xl font-mono rounded-full lowercase">TLRYN</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

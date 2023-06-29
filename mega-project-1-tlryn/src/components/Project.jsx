@@ -1,6 +1,6 @@
 const Project = ({ videoId }) => {
     return (
-        <div className="card btn btn-ghost h-full p-0 w-96 bg-base-100 shadow-xl image-full overflow-hidden" >
+        <div className="card btn btn-ghost h-full p-0 w-full md:w-96 bg-base-100 shadow-xl image-full overflow-hidden" >
             <figure><img src={'https://i.imgur.com/KVZTyR4.png'} alt="Shoes" /></figure>
             <div className="card-body p-6 mt-auto bg-black/70">
                 <div className="card-title normal-case text-white">Day 0</div>
