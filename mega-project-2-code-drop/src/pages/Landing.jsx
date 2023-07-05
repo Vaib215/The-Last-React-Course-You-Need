@@ -1,7 +1,16 @@
-import React from "react";
+import { useEffect } from "react";
 import { FaFileCode } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import { account } from "../helpers/appwrite";
 
 const Landing = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    const user = account.get();
+    user.then(() => {
+      navigate("/");
+    });
+  }, [navigate]);
   return (
     <div
       className="hero min-h-screen"
@@ -19,7 +28,7 @@ const Landing = () => {
             An open source code sharing platform with amazing powers of React
             and Appwrite.
           </p>
-          <button className="btn btn-primary rounded-3xl">Get Started</button>
+          <Link to={"/login"} className="btn btn-primary rounded-3xl">Get Started</Link>
         </div>
       </div>
     </div>
