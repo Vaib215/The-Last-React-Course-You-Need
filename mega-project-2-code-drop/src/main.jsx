@@ -1,35 +1,40 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Landing from "./pages/Landing.jsx";
-import Dashboard from "./pages/Dashboard.jsx";
-import Signup from "./pages/Signup.jsx";
-import Login from "./pages/Login.jsx";
-import Create from "./pages/Create.jsx";
+import Drawer from "./components/Drawer.jsx";
+import "./index.css";
 import CDPreview from "./pages/CDPreview.jsx";
+import Create from "./pages/Create.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import Landing from "./pages/Landing.jsx";
+import Login from "./pages/Login.jsx";
+import Signup from "./pages/Signup.jsx";
+import Edit from "./pages/Edit.jsx";
 
 const router = createBrowserRouter([
   {
+    path: "/landing",
+    element: <Landing />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/public/:id",
+    element: <CDPreview />
+  },
+  {
     path: "/",
-    element: <App />,
+    element: <Drawer />,
     children: [
-      {
-        path: "landing",
-        element: <Landing />,
-      },
       {
         index: true,
         element: <Dashboard />,
-      },
-      {
-        path: "signup",
-        element: <Signup />,
-      },
-      {
-        path: "login",
-        element: <Login />,
       },
       {
         path: "create",
@@ -37,8 +42,12 @@ const router = createBrowserRouter([
       },
       {
         path: ":id",
-        element: <CDPreview />
-      }
+        element: <CDPreview />,
+      },
+      {
+        path: "edit/:id",
+        element: <Edit />,
+      },
     ],
   },
 ]);

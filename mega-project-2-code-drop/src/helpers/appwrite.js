@@ -33,11 +33,11 @@ const addCodeDropToDB = async (codeDropData) => {
     ID.unique(),
     {
       ...codeDropData,
-      users: { id: user.$id },
+      owner: user.$id,
     }
   );
   const result = promise.then((response) => response).catch(() => null);
-  return result
+  return result;
 };
 
-export { client, account, addCodeDropToDB, databases};
+export { client, account, addCodeDropToDB, databases, getCurrentUser };
