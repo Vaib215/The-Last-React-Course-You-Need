@@ -11,7 +11,7 @@ const ProductDescription = () => {
       <h3 className="text-4xl my-2 font-bold">Fall Limited Edition Sneakers</h3>
       <p className="my-4">
         These low-profile sneakers are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they'll withstand everything the
+        Featuring a durable rubber outer sole, they&apos;ll withstand everything the
         weather can offer.
       </p>
       <span className="flex mb-2 gap-2 items-center">

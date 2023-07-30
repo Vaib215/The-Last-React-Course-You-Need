@@ -1,6 +1,6 @@
 {
   "task.allowAutomaticTasks": "on",
-  "workbench.colorTheme": "AMOLED",
+  "workbench.colorTheme": "Solarized Light",
   "editor.mouseWheelZoom": true,
   "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
