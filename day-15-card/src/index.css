@@ -1,0 +1,39 @@
+:root {
+  color-scheme: dark;
+}
+
+section {
+  text-transform: uppercase;
+}
+
+form, .form-control{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: large;
+}
+
+.form-control label{
+  font-size: smaller;
+}
+
+form {
+  border: 1px solid;
+  padding: 1em;
+}
+
+section {
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  padding: 1em;
+  margin: 1em auto;
+  border-radius: 4px;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: monospace;
+  font-size: larger;
+}
