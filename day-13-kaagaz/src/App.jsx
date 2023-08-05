@@ -29,6 +29,7 @@ function App() {
           &gt;
         </button>
       </div>
+      {roomId && <h1 className="text-white text-lg">Room: {roomId}</h1>}
       <Editor roomId={roomId} />
     </div>
   );
